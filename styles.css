@@ -6,7 +6,8 @@ h2 {color: #ff1ca5; font-size: 2em; }
 body {background-color: #FFFFFF;}
 a:link {color: purple;}
 
-
+@media screen and (max-width: 600px) 
+{nav a {width: 100%; display: block;}}
 
 
 nav {background-color: #ffe73d;}
