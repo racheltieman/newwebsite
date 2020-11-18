@@ -1,10 +1,11 @@
 body{ color: #000000; font-family: "Helvetica Neue", Helvetica;}
 
-h1 {color:  #ff1ca5; font-size: 3em; }
-h2 {color: #ff1ca5; font-size: 2em; }
+h1 {color:  #ff1ca5; font-size: 3em; font-family: 'Sofia', cursive;}
+h2 {color: #ff1ca5; font-size: 2em; font-family: 'Sofia', cursive;}
 
 body {background-color: #FFFFFF;}
 a:link {color: purple;}
+
 
 @media screen and (max-width: 600px) 
 {nav a {width: 100%; display: block;}}
@@ -15,3 +16,4 @@ nav a {color: #861fb8;}
 nav a:hover{background-color:#186bbd;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px}
+
