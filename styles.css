@@ -1,9 +1,9 @@
 body{ color: #000000; font-family: "Helvetica Neue", Helvetica;}
 
-h1 {color:  #ff1ca5; font-size: 3em; font-family: 'Sofia', cursive;}
-h2 {color: #ff1ca5; font-size: 2em; font-family: 'Sofia', cursive;}
+h1 {color:  #ff1ca5; font-size: 3em; font-family: 'Acme', sans-serif;}
+h2 {color: #ff1ca5; font-size: 2em; font-family: 'Acme', sans-serif;}
 
-body {background-color: #FFFFFF;}
+body {background-color: #E9E9E9;}
 a:link {color: purple;}
 
 
@@ -11,9 +11,9 @@ a:link {color: purple;}
 {nav a {width: 100%; display: block;}}
 
 
-nav {background-color: #ffe73d;}
-nav a {color: #861fb8;}
-nav a:hover{background-color:#186bbd;}
+nav {background-color: black;}
+nav a {color: white;}
+nav a:hover{background-color:#ff1ca5;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px}
 
