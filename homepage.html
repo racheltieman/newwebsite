@@ -41,7 +41,7 @@ margin: auto; /* margin auto is centering this container */    }
 }
 
 .next {
-  right: 0;
+  right: 650px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -77,6 +77,48 @@ margin: auto; /* margin auto is centering this container */    }
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 </style>
 
 <script>
@@ -134,16 +176,31 @@ function plusSlides(n) {
 
 <div class="slideshow-container">
 <div class="mySlides fade">
+<div class="container">
 <img src="images/me.png" width="400" height="375" alt="rachel tieman">
+<div class="overlay">
+  <div class="text">Me!</div>
+</div>
+</div>
 </div>
 </div>
 
 <div class="mySlides fade">
+<div class="container">
 <img src="images/family.jpg" width="400" height="375" alt= "my family">
+<div class="overlay">
+  <div class="text">My family! My Dad, Mom, and my sisters, Amanda and Rebecca.</div>
+</div>
+</div>
 </div>
 
 <div class="mySlides fade">
+<div class="container">
 <img src="images/hockey.png" width="400" height="375" alt="my sister and I playing hockey">
+<div class="overlay">
+  <div class="text">My sister and I playing hockey!</div>
+</div>
+</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
