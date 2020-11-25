@@ -1,7 +1,7 @@
 body{ color: #000000; font-family: "Helvetica Neue", Helvetica;}
 
-h1 {color:  #ff1ca5; font-size: 3em; font-family: 'Acme', sans-serif;}
-h2 {color: #ff1ca5; font-size: 2em; font-family: 'Acme', sans-serif;}
+h1 {color:  #D02C88; font-size: 3em; font-family: 'Acme', sans-serif;}
+h2 {color: #D02C88; font-size: 2em; font-family: 'Acme', sans-serif;}
 
 body {background-color: #E9E9E9;}
 a:link {color: purple;}
@@ -13,7 +13,7 @@ a:link {color: purple;}
 
 nav {background-color: black;}
 nav a {color: white;}
-nav a:hover{background-color:#ff1ca5;}
+nav a:hover{background-color:#D02C88;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px}
 
