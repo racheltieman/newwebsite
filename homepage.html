@@ -16,14 +16,16 @@
 .words {flex: 1; order: 2;}
 .imageandwords {flex-wrap: wrap;}
 
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
 #slideshow-container {
 background-color: #000000;
 width: 1200px;
 margin: auto; /* margin auto is centering this container */    }
 
-.mySlides {
-  display: none;
-}
+
 
 .prev, .next {
   cursor: pointer;
@@ -121,38 +123,6 @@ margin: auto; /* margin auto is centering this container */    }
 
 </style>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-  function currentSlide(n) {
-  showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-
-
-</script>
-
-
 
 
 <title>Homepage</title>
@@ -236,5 +206,38 @@ and have fun as we talk about all the important not-so-important news of what's 
 
 <hr> 
 &copy;2020
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+  
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
+  }
+  
+  
+  
+  </script>
+
 </body>
 </html>
